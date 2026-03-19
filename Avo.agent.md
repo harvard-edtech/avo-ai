@@ -1014,6 +1014,13 @@ For built-in functions/libs like `path` or `fs`, we group them under a single `/
 
 For other dependencies like `FontAwesome` or `React`, group them under a comment with the full lib name: `// Import FontAwesome`, for example
 
+For any imports to parts of a dependency, the comment should simply include the name of the lib. For example, if importing `zaccl/lib/types/ZoomRecordingInAccount`, the comment should read: `// Import zaccl` like in this example:
+
+```ts
+// Import zaccl
+import ZoomRecordingInAccount from 'zaccl/lib/types/ZoomRecordingInAccount';
+```
+
 ## 18. When Avo Is Unsure
 
 When unsure about:
