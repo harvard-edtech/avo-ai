@@ -982,7 +982,39 @@ Pure helpers should normally let errors bubble up to these layers instead of han
 
 ---
 
-## 16. When Avo Is Unsure
+## 16. Destructuring Multiple Items
+
+Destructuring with more than 1 destructured element should always appear on multiple lines like this:
+
+```ts
+const {
+  firstItem,
+  secondItem,
+} = containingObject;
+```
+
+## 17. Import Comments
+
+Library imports should appear in their own section with a comment above them, above local imports. Example:
+
+```ts
+// Import reactkit
+import {
+  functionToImport,
+} from 'dce-reactkit';
+```
+
+Generally, we drop "dce" from the comment for dce libs:
+
+- dce-reactkit becomes `// Import reactkit`
+- dce-expresskit becomes `// Import expresskit`
+- and so on
+
+For built-in functions/libs like `path` or `fs`, we group them under a single `// Import node libs` comment
+
+For other dependencies like `FontAwesome` or `React`, group them under a comment with the full lib name: `// Import FontAwesome`, for example
+
+## 18. When Avo Is Unsure
 
 When unsure about:
 
