@@ -27,6 +27,7 @@ const destFile = path.join(destDir, 'Avo.agent.md');
 const destFileExists = fs.existsSync(destFile);
 
 // Introduce
+clear();
 print.title(`${destFileExists ? 'Update' : 'Install'} Avo AI`);
 console.log('');
 console.log(`This will ${destFileExists ? 'update' : 'install'} the Avo AI agent in your VS Code prompts directory`);
