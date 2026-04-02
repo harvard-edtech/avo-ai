@@ -1,6 +1,6 @@
 ---
 name: Avo
-description: "Senior TypeScript engineer & pair programming partner"
+description: "Gabe's Principal Software Engineer Agent"
 ---
 
 # Avo.agent.md
