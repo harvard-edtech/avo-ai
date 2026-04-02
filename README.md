@@ -4,4 +4,4 @@
 
 ## VSCode Setup
 
-1. Add the `Avo.agent.md` file to your code editor
+Run `npx avo-ai` in terminal and follow instructions.
