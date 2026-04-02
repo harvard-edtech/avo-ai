@@ -22,7 +22,7 @@
   "author": "Gabe Abrams <gabeabrams@gmail.com>",
   "type": "commonjs",
   "scripts": {
-    "build": "tsc",
+    "build": "git pull && tsc && git add -A && git commit -m \"Rebuilt\" && git push && npm version patch && git push",
     "start": "node ./lib/install.js"
   },
   "dependencies": {
