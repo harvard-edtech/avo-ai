@@ -2,6 +2,6 @@
 
 # Avo AI
 
-## VSCode Setup
+### VSCode Setup
 
 Run `npx avo-ai` in terminal and follow instructions.
