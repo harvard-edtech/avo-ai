@@ -8,7 +8,11 @@ import { platform } from 'os';
 import { clear } from 'console';
 
 // Import helpers
+import prompt from './helpers/prompt';
 import print from './helpers/print';
+
+// Save prompt instance
+print.savePrompt(prompt);
 
 // Find files
 const sourceFile = path.join(process.cwd(), 'Avo.agent.md');
