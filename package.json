@@ -1,0 +1,30 @@
+{
+  "name": "avo-ai",
+  "version": "1.0.0",
+  "description": "Senior TypeScript engineer & pair programming partner",
+  "keywords": [
+    "Avo",
+    "AI",
+    "Agent"
+  ],
+  "bin": {
+    "avo-ai": "npx tsx install.ts"
+  },
+  "homepage": "https://github.com/harvard-edtech/avo-ai#readme",
+  "bugs": {
+    "url": "https://github.com/harvard-edtech/avo-ai/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harvard-edtech/avo-ai.git"
+  },
+  "license": "MIT",
+  "author": "Gabe Abrams <gabeabrams@gmail.com>",
+  "type": "commonjs",
+  "scripts": {
+    "start": "npx tsx install.ts"
+  },
+  "dependencies": {
+    "@types/node": "^25.5.0"
+  }
+}
