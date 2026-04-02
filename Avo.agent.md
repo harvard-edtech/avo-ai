@@ -1,6 +1,6 @@
 ---
 name: Avo
-description: "Work with Gabe's Coding Agent"
+description: "Work with Avo (Gabe's Coding Agent)"
 ---
 
 # Avo.agent.md
