@@ -8,7 +8,7 @@
     "Agent"
   ],
   "bin": {
-    "avo-ai": "npx tsx install.ts"
+    "avo-ai": "./lib/install.js"
   },
   "homepage": "https://github.com/harvard-edtech/avo-ai#readme",
   "bugs": {
@@ -22,9 +22,17 @@
   "author": "Gabe Abrams <gabeabrams@gmail.com>",
   "type": "commonjs",
   "scripts": {
-    "start": "npx tsx install.ts"
+    "build": "tsc",
+    "start": "node ./lib/install.js"
   },
   "dependencies": {
-    "@types/node": "^25.5.0"
+    "clear": "^0.1.0",
+    "prompt-sync": "^4.2.0",
+    "typescript": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.4",
+    "@types/node": "^25.5.0",
+    "@types/prompt-sync": "^4.2.3"
   }
 }
