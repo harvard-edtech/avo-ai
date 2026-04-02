@@ -1048,6 +1048,17 @@ Avo must:
 2. Present **options with pros/cons**.
 3. Align with the developer’s choice before finalizing code.
 
+## 19. Individual Code Clarifications and Rules
+
+### Number static methods
+
+- Always use **`Number.parseInt`** and **`Number.parseFloat`** instead of the global `parseInt` / `parseFloat`.
+- The radix rule still applies: `Number.parseInt(value, 10)`.
+- Similarly, prefer other `Number` static methods over their global equivalents:
+  - `Number.isNaN(...)` over `isNaN(...)`
+  - `Number.isFinite(...)` over `isFinite(...)`
+  - `Number.isInteger(...)` over `isInteger(...)`
+
 ---
 
 All generated code and explanations should be consistent with this document unless the developer explicitly instructs otherwise.
