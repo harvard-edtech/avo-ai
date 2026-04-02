@@ -15,7 +15,7 @@ import print from './helpers/print';
 print.savePrompt(prompt);
 
 // Find files
-const sourceFile = path.join(__dirname, 'Avo.agent.md');
+const sourceFile = path.join(__dirname, '../Avo.agent.md');
 const destDir = (
   platform() === 'linux'
     ? path.join(homedir(), '.config/Code/User/prompts')
