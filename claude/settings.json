@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(npm run lint)",
+      "Bash(npm run lint:*)",
+      "Bash(npm run build)",
+      "Bash(npm run test)",
+      "Bash(npm run test:*)",
+      "Bash(npm run ky:*)",
+      "Bash(npm run dev:*)",
+      "Bash(npm run copy-server-types)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx eslint:*)",
+      "Bash(git status)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git add:*)",
+      "Bash(npm run audit)"
+    ],
+    "ask": [
+      "Bash(npm install --save *)",
+      "Bash(npm install --save-dev *)",
+      "Bash(npm uninstall --save *)",
+      "Bash(npm uninstall --save-dev *)",
+      "Bash(npm run audit:fix)",
+      "Bash(npm run audit:fix --force)",
+      "Bash(npm run *)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/secrets/**)",
+      "Bash(rm -rf:*)"
+    ]
+  },
+  "env": {
+    "NODE_ENV": "development"
+  }
+}
