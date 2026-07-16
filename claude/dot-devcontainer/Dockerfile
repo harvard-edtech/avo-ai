@@ -1,6 +1,6 @@
 # TypeScript dev container for the Avo (Claude Code) setup.
 # Based on the official Node dev container image.
-FROM mcr.microsoft.com/devcontainers/typescript-node:lts
+FROM mcr.microsoft.com/devcontainers/typescript-node
 
 ARG TZ
 ENV TZ="$TZ"
