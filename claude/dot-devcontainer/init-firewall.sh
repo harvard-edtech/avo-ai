@@ -22,6 +22,19 @@ ALLOWED_DOMAINS=(
   "codeload.github.com"
   "objects.githubusercontent.com"
   "harvard-edtech.github.io"
+  # VS Code server + Marketplace, so the container can install the extensions
+  # listed in devcontainer.json. The gallery CDN hosts are per-publisher: if
+  # you add an extension from a new publisher, add
+  # "<publisher>.gallery.vsassets.io" and "<publisher>.gallerycdn.vsassets.io".
+  "update.code.visualstudio.com"
+  "vscode.download.prss.microsoft.com"
+  "marketplace.visualstudio.com"
+  "anthropic.gallery.vsassets.io"
+  "anthropic.gallerycdn.vsassets.io"
+  "dbaeumer.gallery.vsassets.io"
+  "dbaeumer.gallerycdn.vsassets.io"
+  "esbenp.gallery.vsassets.io"
+  "esbenp.gallerycdn.vsassets.io"
 )
 
 echo "Flushing existing rules..."
